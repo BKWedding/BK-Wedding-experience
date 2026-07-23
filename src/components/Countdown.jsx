@@ -20,10 +20,12 @@ function Countdown() {
     return {
       days: Math.floor(difference / (1000 * 60 * 60 * 24)),
       hours: Math.floor(
-        (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        (difference % (1000 * 60 * 60 * 24)) /
+          (1000 * 60 * 60)
       ),
       minutes: Math.floor(
-        (difference % (1000 * 60 * 60)) / (1000 * 60)
+        (difference % (1000 * 60 * 60)) /
+          (1000 * 60)
       ),
       seconds: Math.floor(
         (difference % (1000 * 60)) / 1000
@@ -61,7 +63,11 @@ function Countdown() {
       whileInView="visible"
       viewport={{ once: true }}
     >
-      <h2>Countdown</h2>
+      <h2>⏳ Countdown to Our Big Day ⏳</h2>
+
+      <p className="countdown-subtitle">
+        We can't wait to celebrate this special day with our family and friends.
+      </p>
 
       <div className="countdown-grid">
 
@@ -104,11 +110,15 @@ function Countdown() {
       </div>
 
       <p className="quote">
-        "Love never fails."
+        ❤️ Love never fails. ❤️
       </p>
 
       <p className="scripture">
         — 1 Corinthians 13:8
+      </p>
+
+      <p className="wedding-date">
+        📅 Saturday, 8 August 2026 • Lusaka, Zambia
       </p>
     </motion.section>
   );

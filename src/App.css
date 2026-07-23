@@ -113,46 +113,67 @@ html {
   font-size: 1.25rem;
   line-height: 1.8;
 }
-
 /* ---------------- COUNTDOWN ---------------- */
 
-.countdown-grid {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  flex-wrap: wrap;
-  margin: 50px 0;
+.countdown-subtitle{
+  max-width:700px;
+  margin:20px auto 45px;
+  color:#666;
+  font-size:1.2rem;
+  line-height:1.8;
 }
 
-.count-card {
-  background: white;
-  width: 180px;
-  padding: 30px;
-  border-radius: 25px;
-  box-shadow: 0 12px 30px rgba(0,0,0,.12);
-  transition: .3s;
+.countdown-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:30px;
+  margin:50px auto;
+  max-width:1000px;
 }
 
-.count-card:hover {
-  transform: translateY(-8px);
+.count-card{
+  background:white;
+  padding:35px 20px;
+  border-radius:25px;
+  box-shadow:0 15px 35px rgba(0,0,0,.12);
+  transition:.4s;
 }
 
-.count-card h1 {
-  font-size: 4rem;
-  color: #d45a8c;
+.count-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 45px rgba(111,143,111,.25);
 }
 
-.count-card p {
-  font-weight: bold;
+.count-card h1{
+  font-size:4rem;
+  color:#6f8f6f;
+  margin-bottom:10px;
 }
 
-.quote {
-  font-size: 1.6rem;
-  font-style: italic;
+.count-card p{
+  font-size:1.2rem;
+  font-weight:bold;
+  color:#666;
 }
 
-.scripture {
-  font-weight: bold;
+.quote{
+  margin-top:40px;
+  font-size:1.5rem;
+  color:#d45a8c;
+  font-style:italic;
+}
+
+.scripture{
+  margin-top:10px;
+  font-size:1.2rem;
+  font-weight:bold;
+}
+
+.wedding-date{
+  margin-top:35px;
+  font-size:1.3rem;
+  color:#6f8f6f;
+  font-weight:bold;
 }
 
 /* ---------------- SCHEDULE ---------------- */
@@ -187,8 +208,8 @@ html {
 
 .gallery-grid img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 320px;
+  object-fit: cover;
   border-radius: 20px;
   box-shadow: 0 12px 25px rgba(0,0,0,.15);
   transition: .35s;
