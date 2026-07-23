@@ -10,7 +10,7 @@ function Hero() {
     >
       <div className="container">
         <img
-          src="/couple.jpg"
+          src={`${import.meta.env.BASE_URL}couple.jpg`}
           alt="Bupe & Kafumba"
           className="hero-image"
         />
